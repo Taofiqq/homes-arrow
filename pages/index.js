@@ -39,8 +39,6 @@ const Banner = ({
 export default function Home({ propertiesForSale, propertiesForRent }) {
   return (
     <div>
-      Real Estate App
-      <h1>App</h1>
       <Banner
         purpose="RENT A HOME"
         title1="Rental Homes for"
