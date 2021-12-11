@@ -18,9 +18,9 @@ const Navbar = () => {
   return (
     <ChakraProvider>
       <Flex p="2" borderBottom="1px" borderColor="gray.100">
-        <Box fontSize="xl" color="blue.400" fontWeight="bold">
+        <Box fontSize="xl" color="purple.900" fontWeight="bold">
           <Link href="/" paddingLeft="0">
-            Realtor
+            Homes Arrow
           </Link>
         </Box>
         <Spacer />

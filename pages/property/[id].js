@@ -54,7 +54,78 @@ const PropertyDetails = ({
           {rooms}
           <FaBed /> | {baths} <FaBath /> | {millify(area)} sqft <BsGridFill />
         </Flex>
-        <Text fontSize="lg">{title}</Text>
+        <Box marginTop="2" fontWeight="bold" marginBottom="2">
+          <Text fontSize="lg">{title}</Text>
+          <Text fontSize="lg" color="gray.600" lineHeight="2">
+            {description}
+          </Text>
+        </Box>
+
+        <Flex
+          flexWrap="wrap"
+          textTransform="uppercase"
+          justifyContent="space-between"
+        >
+          <Flex
+            w="400px"
+            justifyContent="space-between"
+            borderBottom="1px"
+            padding="3"
+            borderColor="gray.100"
+          >
+            <Text>Type</Text>
+            <Text fontWeight="bold">{type}</Text>
+          </Flex>
+          <Flex
+            w="400px"
+            justifyContent="space-between"
+            borderBottom="1px"
+            padding="3"
+            borderColor="gray.100"
+          >
+            <Text>Purpose</Text>
+            <Text fontWeight="bold">{purpose}</Text>
+          </Flex>
+          {furnishingStatus && (
+            <Flex
+              w="400px"
+              justifyContent="space-between"
+              borderBottom="1px"
+              padding="3"
+              borderColor="gray.100"
+            >
+              <Text>Furnishing Status</Text>
+              <Text fontWeight="bold">{furnishingStatus}</Text>
+            </Flex>
+          )}
+        </Flex>
+      </Box>
+
+      <Box>
+        {amenities.length && (
+          <Text fontSize="2xl" fontWeight="black" marginTOp="5">
+            Amenities
+          </Text>
+        )}
+
+        <Flex flexWrap="wrap">
+          {amenities.map((item) =>
+            item.amenities.map((amenity) => (
+              <Text
+                fontWeight="bold"
+                color="blue.400"
+                fontSize="l"
+                p="2"
+                bg="gray.200"
+                m="1"
+                borderRadius="5"
+                key={amenity.text}
+              >
+                {amenity.text}
+              </Text>
+            ))
+          )}
+        </Flex>
       </Box>
     </Box>
   );

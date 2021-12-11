@@ -7,16 +7,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Real Estate</title>
+        <title>Homes Arrow </title>
       </Head>
       <Box maxWidth="1280px" m="auto">
-        <header>
-          <Navbar />
-        </header>
         <main>{children}</main>
-        <footer>
-          <Footer />
-        </footer>
       </Box>
     </>
   );
