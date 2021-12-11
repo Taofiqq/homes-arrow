@@ -9,7 +9,6 @@ import noresult from "../assets/noresult.svg";
 import { baseUrl, fetchApi } from "../utils/fetchApi";
 
 const Search = ({ properties }) => {
-  console.log(properties);
   const [searchFilters, setSearchFilters] = useState(false);
   const router = useRouter();
   return (
