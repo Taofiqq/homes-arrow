@@ -17,7 +17,7 @@ import { FiKey } from "react-icons/fi";
 const Navbar = () => {
   return (
     <ChakraProvider>
-      <Flex p="2" borderBottom="1px" borderColor="gray.100">
+      <Flex p="2" borderBottom="1px" borderColor="gray.100" alignItems="center">
         <Box fontSize="xl" color="purple.900" fontWeight="bold">
           <Link href="/" paddingLeft="0">
             Homes Arrow
